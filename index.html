@@ -8,15 +8,11 @@
     <title>Portfolio Website</title>
   </head>
   <body>
+    <!--------------- header --------------->
     <div id="header">
       <div class="container">
         <nav>
-          <img
-            src="/images/richard_logo.png"
-            width="200px"
-            height="200px"
-            class="logo"
-          />
+          <img src="/images/richard_logo.png" class="logo" />
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -25,8 +21,65 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
+        <div class="header-text">
+          <p>Full Stack Engineer</p>
+          <h1>
+            Hi, I'm not <span>Richard</span> <br />
+            Lara from the US
+          </h1>
+        </div>
       </div>
     </div>
+    <!--------------- about --------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/about_me_picture.png" class="about_me_picture" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab enim
+              nemo animi blanditiis, rem ipsa voluptatum sapiente praesentium
+              molestiae doloremque aliquam? Architecto, eligendi eaque et
+              commodi nobis totam corporis deleniti.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>skills1</span><br />skills description1</li>
+                <li><span>skills2</span><br />skills description2</li>
+                <li><span>skills3</span><br />skills description3</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>experience4</span><br />experience description4</li>
+                <li><span>experience5</span><br />experience description5</li>
+                <li><span>experience6</span><br />experience description6</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>education7</span><br />education description7</li>
+                <li><span>education8</span><br />education description8</li>
+                <li><span>education9</span><br />education description9</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
