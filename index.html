@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/03b9ec30df.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Portfolio Website</title>
   </head>
   <body>
@@ -46,13 +50,18 @@
               commodi nobis totam corporis deleniti.
             </p>
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="openTab('skills')">
+              <p
+                class="tab-links active-link"
+                onclick="openTab(event, 'skills')"
+              >
                 Skills
               </p>
-              <p class="tab-links" onclick="openTab('experience')">
+              <p class="tab-links" onclick="openTab(event, 'experience')">
                 Experience
               </p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <p class="tab-links" onclick="openTab(event, 'education')">
+                Education
+              </p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
@@ -79,7 +88,89 @@
         </div>
       </div>
     </div>
-
+    <!--------------- services --------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>service1</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus, expedita.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>service2</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus, expedita.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-image"></i>
+            <h2>service3</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus, expedita.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------- portfolio --------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/work_1.jpg" />
+            <div class="layer">
+              <h3>Test 1</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+                nam!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/work_2.jpg" />
+            <div class="layer">
+              <h3>Test 2</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+                nam!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/work_3.jpg" />
+            <div class="layer">
+              <h3>Test 3</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+                nam!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
